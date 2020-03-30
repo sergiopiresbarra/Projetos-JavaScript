@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        p#par{
+            color: cadetblue;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    <p id="par">Digite seu País:
+    <input type="text" name="tTxt" id="cTxt"/>
+    <input type="submit" name="tSub" id="cSub" value="enviar" onclick="pais()"/></p>
+    <p id="inf"></p>
+    <p id="res"></p>
+    <script>
+        function pais(){        
+            var p = window.document.querySelector('input#cTxt').value
+            var res = window.document.querySelector('p#res')
+            var inf = window.document.querySelector('p#inf')
+            inf.innerHTML = `Seu País é: <strong>${p}</strong>`
+            if(p=='Brasil'){
+                res.innerHTML = 'Voce é <strong>Brasileiro!</strong> :D'
+            }
+            else{
+                res.innerHTML = 'Voce é Estrangeiro! :p'
+                
+            }
+        }
+    </script>
+</body>
+</html>

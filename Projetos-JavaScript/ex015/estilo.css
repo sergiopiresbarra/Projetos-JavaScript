@@ -1,0 +1,24 @@
+body{
+    background: rgb(95, 71, 233);
+    font: normal 15pt ubuntu;
+}
+header{
+    color: cornsilk;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+div#res img{
+    padding-top: 15px;
+}
+footer{
+    color: cornsilk;
+    text-align: center;
+    font-style: italic;
+}
